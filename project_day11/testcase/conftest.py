@@ -12,7 +12,7 @@ def create_option():
         options.add_argument("--disable-gpu")
         driver=webdriver.Chrome(options=options)
     else:
-        driver=Chrome()
+        driver=Chrome("/Library/Frameworks/Python.framework/Versions/3.7/bin/chromedriver")
     return driver
 
 @pytest.fixture(scope='class')
